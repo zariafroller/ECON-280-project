@@ -23,8 +23,6 @@ The data come from the replication package of Bjorvatn et al. 2025, available on
 
 ### Software Requirements
 
-> INSTRUCTIONS: List all of the software requirements, up to and including any operating system requirements, for the entire set of code. It is suggested to distribute most dependencies together with the replication package if allowed, in particular if sourced from unversioned code repositories, Github repos, and personal webpages. In all cases, list the version *you* used. All packages should be listed in human-readable form in this README, but should also be included in a setup or install script.
-
 - [ ] The replication package contains one or more programs to install all dependencies and set up the necessary directory structure.
 
 - Stata (code was last run with version 19)
@@ -64,29 +62,14 @@ Approximate storage space needed:
 
 #### Computational Details
 
-The code was last run on a **4-core Intel-based laptop with MacOS version 10.14.4 with 200GB of free space**. 
-
-Portions of the code were last run on a **32-core Intel server with 1024 GB of RAM, 12 TB of fast local storage**. Computation took **734 hours**. 
-
-Portions of the code were last run on a **12-node AWS R3 cluster, consuming 20,000 core-hours, with 2TB of attached storage**.  
-
-> INSTRUCTIONS: Identifiying hardware and OS can be obtained through a variety of ways:
-> Some of these details can be found as follows:
->
-> - (Windows) by right-clicking on "This PC" in File Explorer and choosing "Properties"
-> - (Mac) Apple-menu > "About this Mac"
-> - (Linux) see code in [linux-system-info.sh](https://github.com/AEADataEditor/replication-template/blob/master/tools/linux-system-info.sh)`
+The code was last run on a **2018 Macbook Air with a 1.6 GHz Dual-Core Intel Core i5 processor**. 
 
 
 ## Description of programs/code
 
-> INSTRUCTIONS: Give a high-level overview of the program files and their purpose. Remove redundant/ obsolete files from the Replication archive.
-
 - Files in `code` folder run the regressions and produce tables. 
 
 ## Instructions to Replicators
-
-> INSTRUCTIONS: The first two sections ensure that the data and software necessary to conduct the replication have been collected. This section then describes a human-readable instruction to conduct the replication. This may be simple, or may involve many complicated steps. It should be a simple list, no excess prose. Strict linear sequence. If more than 4-5 manual steps, please wrap a main program/Makefile around them, in logical sequences. Examples follow.
 
 - Edit `code/wrapper.do` to adjust the default path
 - Download the data files referenced above. Each should be stored in the prepared subdirectories of `data/`, in the format that you download them in. 
